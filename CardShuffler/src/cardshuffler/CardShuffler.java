@@ -52,9 +52,7 @@ class Card
             return false;
         }
         Card c1 = (Card)o;
-        Card c2 = (Card)o;
-        Card c3 = (Card)o;
-        return String(c1).equals(c2);
+        return this.toString().equals(c1.toString());
     }
 }
 public class CardShuffler
@@ -66,15 +64,8 @@ public class CardShuffler
         Card c3 = new Card(11, 'c');
         System.out.println(c1);
         System.out.println(c3);
-        if (c1 == c3)
-        {
-        System.out.println("Equal");
+        System.out.println(c1.equals(c3));
+        System.out.println(c1.equals(c2));
         }
-        else
-        {
-        System.out.println("Not Equal");
-        }
-    }
 }
-
 
